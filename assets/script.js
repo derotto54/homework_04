@@ -1,8 +1,10 @@
 let qButton = document.getElementById('start')
 let setClock = document.getElementById('curTime')
 let quizSpace = document.getElementById('quiz')
+let answerSpace = document.getElementById('answerGrid')
+
 let q1 = "What is your favorite colour?"
-let clock = 6
+let clock = 59
 
 
 
@@ -37,10 +39,12 @@ function addQuest(q) {
 
 addQuest(q1)
 
-
-
 //Function for generating answers
-
+function addAns(a1, a2, a3, a4) {
+    clearQ('answers')
+    answerSpace.innerHTML = '<div class="row m-2"><button type="button" class="btn btn-primary col-5">a1</button><div class="col-2"></div><button type="button" class="btn btn-primary col-5">a2</button> </div><div class="row m-2"><button type="button" class="btn btn-primary col-5">a3</button><div class="col-2"></div><button type="button" class="btn btn-primary col-5">a4</button></div>'    
+}
+addAns('Yes', 'No', 'Maybe', 'I dont know')
 
 
 //Function for validating answers
