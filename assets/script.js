@@ -105,15 +105,10 @@ genQuestion(questionNumber)
 //Function for validating answers
     function checkAnswer(event) {
         response = event.target.id
-        console.log(response)
-        console.log(correctAns)
         if (response == correctAns) {
-                c('correct')
                 questionNumber = questionNumber + 1
-                c(questionNumber)
                 genQuestion(questionNumber)
             } else {
-                c('incorrect')
                 clock = clock - 5
             }
     }
