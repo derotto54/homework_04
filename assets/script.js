@@ -8,7 +8,6 @@ var correctAns = ''
 var startTimer = false
 let clock = 59
 let response =''
-const c = console.log
 var questionNumber = 1
 
 //questions
